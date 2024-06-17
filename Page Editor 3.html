@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1{
+            font-weight: bold;
+            background-color: lightgreen;
+        }
+
+        fieldset {
+            background-color: lightgreen;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        /* navigtion bar */
+        .navbar {
+            width: 100%;
+            margin: auto ;
+            padding: 50px 2px; 
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; 
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 12px; 
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0%;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: 0.5s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+        .banner {
+            background-color: #009688;
+        }
+
+
+        @keyframes slideInTopToBottom {
+            from {
+                transform: translateY(-300px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        /* footer */
+
+        footer {
+            position: relative;
+            bottom: -68px;
+            left: 0px;
+            right: 0px;
+            background-color: #009688;
+            height: auto;
+            width: 100%;
+            font-family: "open sans";
+            padding-top: 0px;
+            margin-top: 0px;
+            color: #ffffff;
+        }
+
+        .footer-container h3 {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 2rem;
+        margin: 15px 0px 10px 0;
+        }
+
+        .footer-container p {
+        text-align: center;
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        }
+
+        .icons{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 2rem 0;
+        }
+
+        .icons li {
+        margin: 0 10px;
+        }
+
+        .icons a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.3rem;
+        }
+
+
+        .icons a:hover i {
+        color: rgba(0, 255, 255, 0.753);
+        transform: scale(1.5);
+        }
+
+        .footer-bottom {
+        background-color: #096960;
+        width: 100%;
+        padding: 15px 0px;
+        text-align: center;
+        text-decoration-color: #fcfcfc;
+        }
+
+        .footer-bottom p {
+        font-size: 15px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #fff;
+        font-family: "open sans";
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-align: center;
+        }
+
+        .footer-bottom a:hover {
+        color: rgba(0, 255, 255, 0.753);
+        }
+    </style>
+</head>
+<body>
+    <!--Naviation bar-->
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="Team.html">About Us</a></li>
+                <li><a href="#">Site map</a></li>
+                <li><a href="UserProfile.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>Page Editor</h1> 
+    <hr>
+    <p class="italic">Name : Nihil Rupasinghe <br>
+    Role : Strudent 3 <br>
+    The following page is edited by me</p>
+    <hr><br>
+    <fieldset>
+        <h3>User Profile</h3>
+        <p>Created a user profile using HTML , CSS and Javascipt. Get the user input from the prompt nd show the output in the document.</p>
+        <a href="UserProfile.html" target="_blank">link to user profile</a>
+        <br><br><br>
+
+        <h3>Team</h3>
+        <p>Create a team site show the details about each tem member and their roll.</p>
+        <a href="Team.html" target="_blank">link to the team</a>
+        <br><br><br>
+
+        <h3>Content page</h3>
+        <p>Create a content page related to the topic.</p>
+        <a href="Content3.html" target="_blank">link to the content page</a>
+        <br><br><br>
+    </fieldset>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <h3><b>Health Plus</b></h3>
+            <p>
+                "Welcome to our Health website! Discover insights into Healthy foods, fitness, yoga, and Music.
+                For any questions or feedback, please feel free to reach out to us."
+            </p>
+            <ul class="icons">
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://mobile.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://chat.whatsapp.com"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright&copy; 2024 Health Plus. designed by  <a href="Page Editor 3.html">@Nihil Rupainghe</a></p>
+        </div>
+    </footer>
+</body>
+</html>
